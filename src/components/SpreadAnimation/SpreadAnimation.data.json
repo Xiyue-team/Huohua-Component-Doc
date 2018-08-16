@@ -1,4 +1,9 @@
 {
-  "color": "light",
-  "label": "SpreadAnimation"
+  "topRadius": "25",
+  "bottomRadius": "25",
+  "height": "100",
+  "segment": "3",
+  "animationTime": "1.5",
+  "planColor": "'#6384C5'",
+  "lineColor": "'#000000'"
 }

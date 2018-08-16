@@ -1,53 +1,43 @@
-# HuohuaComponentDoc
-
-火花素材框架文档使用说明
-
-## Contents
-
-- [HuohuComponentDoc](#huohucomponentdoc)
-	- [Contents](#contents)
-	- [Features](#features)
-	- [dependents](#dependents)
-	- [install](#install)
-	- [How to use](#how-to-use)
-		- [developer](#developer)
-		- [Compile](#compile)
+# 全屏布局组件
 
 ## Features
 
-- 文档项目基于 [Rosid](https://github.com/electerious/Rosid), a web server with just-in-time pre-processing. JS (with Babel, UglifyJS), SASS (with cssnano, Autoprefixer) and Nunjucks can be used right out of the box.
-
-## dependents
-
-doc dependents on …
-
-- [Node.js](https://nodejs.org/en/) (v8.5.0 or newer)
-- [yarn](https://yarnpkg.com/en/)
-
-
-
-## install
-
-使用 [yarn](https://yarnpkg.com/en/) 安装所有依赖.
-
-```sh
-yarn install
-```
+- 为了快速布局,所开发的布局组件
 
 ## How to use
 
-### developer
+### Import
 
-使用以下命令启动. 使用浏览器访问, 代码改变可实时刷新保存刷新.
+使用以下方式导入组件
 
 ```sh
-yarn start
+  import fullScreensLayout from '../../../../src/component/layout/fullScreens_layout.vue';
 ```
 
-### Compile
+### statement
 
-执行以下命令，编译生成打包文件目录 `dist` , 上传到服务器目录即可访问.
+在导入文件后在components中声明组件
 
 ```sh
-yarn run compile
+   components: {
+      fullScreensLayout
+    },
+```
+
+### use
+直接以标签的形式引入组件,并绑定对应的name及id,进行重写,
+3dContainer为主内容区,controlPanel为控件区
+```sh
+    <fullScreensLayout>
+            <template slot="viewBox" slot-scope="viewBox">
+                <div id="3dContainer">
+                  <!--  Core code -->
+                </div>
+            </template>
+            <template slot="controlPanel" slot-scope="controlPanel">
+                <div id="controlPanel">
+                 <!--  Core code -->
+                </div>
+            </template>
+        </fullScreensLayout>
 ```
