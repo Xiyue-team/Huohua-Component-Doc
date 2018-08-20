@@ -1,4 +1,4 @@
 {
-  "color": "light",
-  "label": "counter"
+  "counterNum": "Number",
+  "countDisabled": "Number"
 }
