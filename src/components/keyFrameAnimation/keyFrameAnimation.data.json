@@ -1,4 +1,15 @@
 {
-  "color": "light",
-  "label": "keyFrameAnimation"
+  "isInfinite": "Boolean",
+  "width": "Number",
+  "height": "Number",
+  "showSlider": "Boolean",
+  "timeLine": "[]:Number",
+  "label": "[]:string",
+  "interval": "Number",
+  "animationName": "String",
+  "playRange": "[]:Number",
+  "image": "[]:string",
+  "timeLineLength": "Number",
+  "zipUrl": "String",
+  "imageNum": "Number"
 }
