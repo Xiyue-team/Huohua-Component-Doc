@@ -18645,13 +18645,6 @@ module.exports = function (data) {
 
 /***/ }),
 
-/***/ "GxOV":
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ "HAf2":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -38663,9 +38656,9 @@ var Component = normalizeComponent(
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ts_loader_tslint_loader_node_modules_vue_loader_lib_selector_type_script_index_0_counter_vue__ = __webpack_require__("lahS");
 /* empty harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_15398f0e_hasScoped_false_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_counter_vue__ = __webpack_require__("VK3l");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_405d1c14_hasScoped_false_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_counter_vue__ = __webpack_require__("Y3C+");
 function injectStyle (ssrContext) {
-  __webpack_require__("GxOV")
+  __webpack_require__("rXE3")
 }
 var normalizeComponent = __webpack_require__("VU/8")
 /* script */
@@ -38683,7 +38676,7 @@ var __vue_scopeId__ = null
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
   __WEBPACK_IMPORTED_MODULE_0__ts_loader_tslint_loader_node_modules_vue_loader_lib_selector_type_script_index_0_counter_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_15398f0e_hasScoped_false_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_counter_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_405d1c14_hasScoped_false_transformToRequire_video_src_source_src_img_src_image_xlink_href_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_counter_vue__["a" /* default */],
   __vue_template_functional__,
   __vue_styles__,
   __vue_scopeId__,
@@ -40761,17 +40754,6 @@ module.exports = function inflate_fast(strm, start) {
   return;
 };
 
-
-/***/ }),
-
-/***/ "VK3l":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',_vm._l((_vm.totalCount),function(n){return _c('span',{staticClass:"counter-item",class:[ n <= _vm.count ? 'counter-item_disabled' : 'counter-item']})}))}
-var staticRenderFns = []
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
 
@@ -43442,6 +43424,17 @@ function simpleWrite(buf) {
 function simpleEnd(buf) {
   return buf && buf.length ? this.write(buf) : '';
 }
+
+/***/ }),
+
+/***/ "Y3C+":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._l((_vm.totalCount),function(n){return _c('span',{staticClass:"counter-item",class:[ n <= _vm.count ? 'counter-item_disabled' : 'counter-item'],style:({})})}),_vm._v(" "),(_vm.isButton)?_c('div',{staticClass:"button",staticStyle:{"width":"30px","height":"30px"},on:{"click":function($event){_vm.changeStyle()}}}):_vm._e()],2)}
+var staticRenderFns = []
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
 
 /***/ }),
 
@@ -48016,6 +48009,11 @@ module.exports = function(fn, args, that){
         countDisabled: {
             default: 0,
             type: Number
+        },
+        //是否需要默认按钮
+        isButton: {
+            default: false,
+            type: Boolean
         }
     },
     data() {
@@ -48037,6 +48035,7 @@ module.exports = function(fn, args, that){
         //重置计数器的方法
         reset() {
             this.count = this.countDisabled;
+            this.$emit('input', this.count);
         }
     }
 }));
@@ -48375,6 +48374,13 @@ NodeBufferReader.prototype.readData = function(size) {
 };
 module.exports = NodeBufferReader;
 
+
+/***/ }),
+
+/***/ "rXE3":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
