@@ -9,7 +9,8 @@
 - countDisabled 计数器的初始个数
 
 ## functions
-- changeStyle()  触发计数器的方法
+- counterPlus()  计数器+1的方法
+- counterLess()  计数器-1的方法
 - reset()        重置计数器的方法
 ## How to use
 
@@ -50,6 +51,7 @@ data() {
 ```
 调用组件内的方法
 ```sh
-(this.$refs.countTest as any).changeStyle();
+(this.$refs.countTest as any).counterPlus();
+(this.$refs.countTest as any).counterLess();
 (this.$refs.countTest as any).reset();
 ```
