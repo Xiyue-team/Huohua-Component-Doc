@@ -1,6 +1,6 @@
 webpackJsonp([3],{
 
-/***/ 3:
+/***/ 4:
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__("yzvR");
@@ -23,8 +23,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
  *
  */
 class Exercise {
-    constructor() {
-    }
 }
 /* harmony export (immutable) */ __webpack_exports__["Exercise"] = Exercise;
 
@@ -34,6 +32,10 @@ class Exercise {
 class Questions {
 }
 /* harmony export (immutable) */ __webpack_exports__["Questions"] = Questions;
+
+class Analytic {
+}
+/* harmony export (immutable) */ __webpack_exports__["Analytic"] = Analytic;
 
 /**
  * 解析步骤
@@ -64,4 +66,4 @@ class MobileHardwareInfo {
 
 /***/ })
 
-},[3]);
+},[4]);

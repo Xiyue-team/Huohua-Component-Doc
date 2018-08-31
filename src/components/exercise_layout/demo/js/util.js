@@ -57,7 +57,7 @@ class CommonUtil {
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__("r413");
@@ -265,7 +265,7 @@ class Detector {
         const contentDOM = document.querySelector('.root_div_container');
         //const contentDOM = document.body as HTMLDivElement;
         //alert('width: ' + width + ' height: ' + height)
-        if (width > height) {
+        if (width > height) { // 横屏
             window['direction'] = 0;
             contentDOM.style.width = width + 'px';
             contentDOM.style.height = height + 'px';
@@ -668,4 +668,4 @@ var OSType;
 
 /***/ })
 
-},[4]);
+},[5]);
