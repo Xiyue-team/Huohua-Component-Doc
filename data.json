@@ -1,8 +1,8 @@
 {
   "styles": [
-    "/styles/main.css"
+    "../../styles/main.css"
   ],
   "scripts": [
-    "/scripts/main.js"
+    "../../scripts/main.js"
   ]
 }
