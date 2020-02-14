@@ -23,6 +23,6 @@
     "rosid-handler-malvid": "^3.0.0",
     "rosid-handler-njk": "^6.0.0",
     "rosid-handler-sass": "^6.0.1",
-    "yarn": "^1.9.4"
+    "yarn": "^1.22.0"
   }
 }
